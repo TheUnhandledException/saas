@@ -1,7 +1,7 @@
 # ❌ Sarcasmo-as-a-Service
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/hotheadhacker/no-as-a-service/main/assets/imgs/naas-with-no-logo-bunny.png" width="800" alt="SAAS Banner" width="70%"/>
+  <img src="https://raw.githubusercontent.com/TheUnhandledException/saas/main/assets/img/saas-with-meme.png" width="800" alt="SAAS Banner" width="70%"/>
 </p>
 
 Já precisou de uma maneira elegante para enaltecer a cognição negativa de alguém? Esta API retorna frases elegantemente sarcásticas, perfeitamente adequadas para qualquer cenário: pessoal, profissional, vida estudantil, vida de desenvolvedor ou simplesmente por diversão.
@@ -40,7 +40,7 @@ Quer fazer você mesmo? É leve e simples.
 
 ### 1. Clone o repositório
 ```bash
-git clone https://github.com/Woorkier/saas.git
+git clone https://github.com/TheUnhandledException/saas.git
 cd saas
 ```
 
@@ -110,7 +110,7 @@ Se você abrir este repositório no Github Codespaces, ele usará automaticament
 
 ## 👤 Autor
 
-Criado pela ociosidade de [yuca](https://github.com/hotheadhacker)
+Criado pela ociosidade de [yuca](https://github.com/TheUnhandledException)
 
 ---
 
