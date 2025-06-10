@@ -15,5 +15,5 @@ services:
       - saas
 
 networks:
-  web:
+  saas:
     external: true
