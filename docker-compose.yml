@@ -2,18 +2,19 @@ version: '3.8'
 
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: saas-sarcasmo-as-a-service:latest  # Replace with your image name (pre-built)
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.saas.rule=Host(`saas.woorkier.com.br`)"
       - "traefik.http.services.saas.loadbalancer.server.port=3000"
     ports:
-      - "5000:3000"  # Change 5000 to your desired external port
+      - "5000:3000"
     networks:
       - saas
+    deploy:
+      replicas: 1
 
 networks:
   saas:
     external: true
+    name: saas  # The name of your existing Swarm network
