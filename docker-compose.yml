@@ -12,7 +12,7 @@ services:
     ports:
       - "5000:3000"  # Change 5000 to your desired external port
     networks:
-      - woorkierNet
+      - saas
 
 networks:
   web:
