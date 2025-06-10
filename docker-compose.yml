@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.saas.rule=Host(`saas.woorkier.com.br`)"
+      - "traefik.http.services.saas.loadbalancer.server.port=3000"
+    ports:
+      - "5000:3000"  # Change 5000 to your desired external port
+    networks:
+      - woorkierNet
+
+networks:
+  web:
+    external: true
