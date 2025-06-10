@@ -1,0 +1,15 @@
+{
+  "name": "saas-sarcasmo-as-a-service",
+  "version": "1.0.0",
+  "description": "Uma API leve que retorna respostas para pessoas com zero esforço cognitivo.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "hotheadhacker",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.0.0"
+  }
+}
