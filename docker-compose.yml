@@ -12,7 +12,24 @@ services:
     networks:
       - saas
     deploy:
+      mode: replicated
       replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1024M
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.saas.rule=Host(`saas.woorkier.com.br`)
+        - traefik.http.routers.saas.entrypoints=websecure
+        - traefik.http.routers.saas.priority=1
+        - traefik.http.routers.saas.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.saas.service=saas_app
+        - traefik.http.services.saas.loadbalancer.server.port=5000
+        - traefik.http.services.saas.loadbalancer.passHostHeader=1
 
 networks:
   saas:
